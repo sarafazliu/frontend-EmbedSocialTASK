@@ -1,4 +1,5 @@
 function showCard(card){
+    card.removeAttribute("onclick");
     let profile = card.childNodes[1].outerHTML;
     let image = card.childNodes[3].outerHTML;
     let caption = card.childNodes[5].outerHTML;
@@ -6,7 +7,9 @@ function showCard(card){
 
     card = `<div class="card">${image}${profile}<hr>${caption}${likes}</div>`;
     card = new DOMParser().parseFromString(card, "text/html").body.firstChild;
-    
+
+    card.style.border = "none";
+    card.style.padding = "0";
     let show = document.getElementById("show");
     document.querySelector(".show-content").append(card);
     show.style.display = "block";
