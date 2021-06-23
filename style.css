@@ -7,3 +7,19 @@
     .cards { grid-template-columns: repeat(4, 1fr);
     }
 }
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.cards {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
