@@ -13,6 +13,8 @@ body {
 }
 
 .cards {
+    width: 90%;
+    margin: auto;
     margin-top: 100px;
     display: grid;
     grid-gap: 10px;
@@ -23,3 +25,78 @@ body {
     border: 1px solid #ddd;
 }
 
+.profile-content {
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px 0 0;
+    display: inline-block;
+    position: relative;
+    float: left;
+
+}
+
+.profile-image img {
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.name {
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+
+}
+
+.date {
+    color: black;
+    font-size: 12px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+.logo img {
+    width: 100%;
+    height: 30px;
+    object-fit: cover;
+}
+
+.card-post img {
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+.card-caption {
+    font-size: 12px;
+    margin: 15px 0 15px 0;
+}
+
+.card-likes {
+    height: 4%;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+hr {
+    opacity: 50%;
+}
