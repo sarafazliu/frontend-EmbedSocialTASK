@@ -1,3 +1,17 @@
+function showCard(card){
+    let profile = card.childNodes[1].outerHTML;
+    let image = card.childNodes[3].outerHTML;
+    let caption = card.childNodes[5].outerHTML;
+    let likes = card.childNodes[9].outerHTML;
+
+    card = `<div class="card">${image}${profile}<hr>${caption}${likes}</div>`;
+    card = new DOMParser().parseFromString(card, "text/html").body.firstChild;
+    
+    let show = document.getElementById("show");
+    document.querySelector(".show-content").append(card);
+    show.style.display = "block";
+}
+
 function loadCards(){
     let times=0;
     let cards = document.getElementsByName("card");
