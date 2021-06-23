@@ -1,3 +1,19 @@
+function loadCards(){
+    let times=0;
+    let cards = document.getElementsByName("card");
+    let btn = document.getElementById("btn");
+    for (let i=0;i<cards.length;i++){
+        if (cards[i].style.display === "none") {
+            cards[i].style.display = "block";
+            times++;
+        }
+        if (cards[i+1]===undefined)
+            btn.style.display = "none";
+        if (times===4)
+            return;
+    }
+}
+
 function jsonDataFetch() {
     fetch("data.json")
         .then(response => {
